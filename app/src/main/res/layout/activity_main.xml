@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zhaoxixiang.bwie.com.yuzhilai_test_zhaoxixiang.MainActivity">
+
+
+    <!--<FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/main_rb_study"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@mipmap/study"
+            android:text="学习"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:id="@+id/main_rb_yigou"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@mipmap/gouwuche_icon"
+            android:text="以购"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:id="@+id/main_rb_dianwu"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@mipmap/dianwu"
+            android:text="店务"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:id="@+id/main_rb_myself"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@mipmap/my_self_icon"
+            android:text="我的"
+            android:gravity="center"
+            />
+    </RadioGroup>-->
+
+    <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/main_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.hjm.bottomtabbar.BottomTabBar>
+</LinearLayout>

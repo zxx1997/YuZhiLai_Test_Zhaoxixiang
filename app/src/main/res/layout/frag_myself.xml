@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF2954D7">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE2DDDB">
+
+        <RelativeLayout
+            android:id="@+id/myself_login"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#fff"
+            android:paddingTop="10dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/myself_sdv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:placeholderImage="@mipmap/ic_launcher_round"
+                android:layout_marginLeft="20dp"/>
+
+           <LinearLayout
+               android:layout_width="80dp"
+               android:layout_height="60dp"
+               android:orientation="vertical"
+               android:paddingTop="10dp"
+               android:layout_toRightOf="@+id/myself_sdv">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="点击登录"/>
+               <TextView
+                   android:id="@+id/myself_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="游客"/>
+           </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/mine_rightarrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+</LinearLayout>
